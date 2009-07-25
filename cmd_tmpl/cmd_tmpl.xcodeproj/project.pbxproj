@@ -1,0 +1,323 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		735FBB7C101AA06200D0718A /* init.scm in Sources */ = {isa = PBXBuildFile; fileRef = 735FBB78101AA04900D0718A /* init.scm */; };
+		8DD76FAC0486AB0100D96B5E /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* main.c */; settings = {ATTRIBUTES = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		73B4574F1019AC9E00A26EDD /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			filePatterns = "*init.scm";
+			fileType = pattern.proxy;
+			isEditable = 1;
+			outputFiles = (
+				"${INPUT_FILE_DIR}/module1.c",
+				"${INPUT_FILE_DIR}/init.c",
+				"${INPUT_FILE_DIR}/init_.c",
+				"${INPUT_FILE_DIR}/module2.c",
+			);
+			script = "echo \"Generator called, this rule specifies the output files\"";
+		};
+/* End PBXBuildRule section */
+
+/* Begin PBXContainerItemProxy section */
+		735FBB93101AA1BC00D0718A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 735FBB80101AA16A00D0718A;
+			remoteInfo = "ruby build";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8DD76FAF0486AB0100D96B5E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		08FB7796FE84155DC02AAC07 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		7345EF28101AC25000751F9A /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		735FBB78101AA04900D0718A /* init.scm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = init.scm; sourceTree = "<group>"; };
+		735FBB79101AA04900D0718A /* module1.scm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = module1.scm; sourceTree = "<group>"; };
+		735FBBA1101AAEA900D0718A /* build.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = build.rb; sourceTree = "<group>"; };
+		73F7AC39101ABFD700494270 /* module2.scm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = module2.scm; sourceTree = "<group>"; };
+		8DD76FB20486AB0100D96B5E /* cmd_tmpl */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = cmd_tmpl; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DD76FAD0486AB0100D96B5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* cmd_tmpl */ = {
+			isa = PBXGroup;
+			children = (
+				735FBBA0101AAEA900D0718A /* tools */,
+				735FBB77101AA04900D0718A /* scheme */,
+				08FB7795FE84155DC02AAC07 /* Source */,
+				C6A0FF2B0290797F04C91782 /* Documentation */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+			);
+			name = cmd_tmpl;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				08FB7796FE84155DC02AAC07 /* main.c */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DD76FB20486AB0100D96B5E /* cmd_tmpl */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		735FBB77101AA04900D0718A /* scheme */ = {
+			isa = PBXGroup;
+			children = (
+				735FBB78101AA04900D0718A /* init.scm */,
+				735FBB79101AA04900D0718A /* module1.scm */,
+				73F7AC39101ABFD700494270 /* module2.scm */,
+			);
+			path = scheme;
+			sourceTree = "<group>";
+		};
+		735FBBA0101AAEA900D0718A /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				735FBBA1101AAEA900D0718A /* build.rb */,
+			);
+			path = tools;
+			sourceTree = "<group>";
+		};
+		C6A0FF2B0290797F04C91782 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				7345EF28101AC25000751F9A /* LICENSE */,
+			);
+			name = Documentation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		735FBB80101AA16A00D0718A /* ruby build */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = 735FBB92101AA18700D0718A /* Build configuration list for PBXLegacyTarget "ruby build" */;
+			buildPhases = (
+			);
+			buildToolPath = tools/build.rb;
+			buildWorkingDirectory = "$(PROJECT_DIR)";
+			dependencies = (
+			);
+			name = "ruby build";
+			passBuildSettingsInEnvironment = 1;
+			productName = "ruby build";
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		8DD76FA90486AB0100D96B5E /* cmd_tmpl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB928508733DD80010E9CD /* Build configuration list for PBXNativeTarget "cmd_tmpl" */;
+			buildPhases = (
+				8DD76FAB0486AB0100D96B5E /* Sources */,
+				8DD76FAD0486AB0100D96B5E /* Frameworks */,
+				8DD76FAF0486AB0100D96B5E /* CopyFiles */,
+			);
+			buildRules = (
+				73B4574F1019AC9E00A26EDD /* PBXBuildRule */,
+			);
+			dependencies = (
+				735FBB94101AA1BC00D0718A /* PBXTargetDependency */,
+			);
+			name = cmd_tmpl;
+			productInstallPath = "$(HOME)/bin";
+			productName = cmd_tmpl;
+			productReference = 8DD76FB20486AB0100D96B5E /* cmd_tmpl */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "cmd_tmpl" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 08FB7794FE84155DC02AAC07 /* cmd_tmpl */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DD76FA90486AB0100D96B5E /* cmd_tmpl */,
+				735FBB80101AA16A00D0718A /* ruby build */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DD76FAB0486AB0100D96B5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				735FBB7C101AA06200D0718A /* init.scm in Sources */,
+				8DD76FAC0486AB0100D96B5E /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		735FBB94101AA1BC00D0718A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 735FBB80101AA16A00D0718A /* ruby build */;
+			targetProxy = 735FBB93101AA1BC00D0718A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB928608733DD80010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /usr/local/bin;
+				LIBRARY_SEARCH_PATHS = "/Users/weiju/devlocal/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/lib";
+				PRODUCT_NAME = cmd_tmpl;
+			};
+			name = Debug;
+		};
+		1DEB928708733DD80010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				LIBRARY_SEARCH_PATHS = "/Users/weiju/devlocal/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/lib";
+				PRODUCT_NAME = cmd_tmpl;
+			};
+			name = Release;
+		};
+		1DEB928A08733DD80010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "/Users/weiju/devlocal/gambitc-macosx/include";
+				LIBRARY_SEARCH_PATHS = "/Users/weiju/devlocal/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/lib";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-D___LIBRARY";
+				OTHER_LDFLAGS = "-lgambc";
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Debug;
+		};
+		1DEB928B08733DD80010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "/Users/weiju/devlocal/gambitc-macosx/include";
+				LIBRARY_SEARCH_PATHS = "/Users/weiju/devlocal/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/lib";
+				OTHER_CFLAGS = "-D___LIBRARY";
+				OTHER_LDFLAGS = "-lgambc";
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Release;
+		};
+		735FBB81101AA16A00D0718A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GSC = "/Users/weiju/devlocal/gambitc-macosx/bin/gsc";
+				PRODUCT_NAME = "ruby build";
+			};
+			name = Debug;
+		};
+		735FBB82101AA16A00D0718A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = "ruby build";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB928508733DD80010E9CD /* Build configuration list for PBXNativeTarget "cmd_tmpl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB928608733DD80010E9CD /* Debug */,
+				1DEB928708733DD80010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "cmd_tmpl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB928A08733DD80010E9CD /* Debug */,
+				1DEB928B08733DD80010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		735FBB92101AA18700D0718A /* Build configuration list for PBXLegacyTarget "ruby build" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				735FBB81101AA16A00D0718A /* Debug */,
+				735FBB82101AA16A00D0718A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}
