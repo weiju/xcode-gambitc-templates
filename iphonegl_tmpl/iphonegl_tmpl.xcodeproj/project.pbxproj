@@ -40,7 +40,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 7308D685101C359500E26503 /* build scheme files */;
+			remoteGlobalIDString = 7308D685101C359500E26503;
 			remoteInfo = "build scheme files";
 		};
 /* End PBXContainerItemProxy section */
@@ -252,10 +252,10 @@
 				GCC_PREFIX_HEADER = iphonegl_tmpl_Prefix.pch;
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
 				GCC_VERSION = 4.2;
-				HEADER_SEARCH_PATHS = "/Users/weiju/devlocal/$(CONFIGURATION)$(EFFECTIVE_PLATFORM)/include";
+				HEADER_SEARCH_PATHS = "$(GAMBITC_BASEPATH)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM)/include";
 				INFOPLIST_FILE = "iphonegl_tmpl-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 2.2;
-				LIBRARY_SEARCH_PATHS = "/Users/weiju/devlocal/$(CONFIGURATION)$(EFFECTIVE_PLATFORM)/lib";
+				LIBRARY_SEARCH_PATHS = "$(GAMBITC_BASEPATH)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM)/lib";
 				OTHER_CFLAGS = "-D___LIBRARY";
 				OTHER_LDFLAGS = "-lgambc";
 				PRODUCT_NAME = iphonegl_tmpl;
@@ -272,10 +272,10 @@
 				GCC_PREFIX_HEADER = iphonegl_tmpl_Prefix.pch;
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
 				GCC_VERSION = 4.2;
-				HEADER_SEARCH_PATHS = "/Users/weiju/devlocal/$(CONFIGURATION)$(EFFECTIVE_PLATFORM)/include";
+				HEADER_SEARCH_PATHS = "$(GAMBITC_BASEPATH)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM)/include";
 				INFOPLIST_FILE = "iphonegl_tmpl-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 2.2;
-				LIBRARY_SEARCH_PATHS = "/Users/weiju/devlocal/$(CONFIGURATION)$(EFFECTIVE_PLATFORM)/lib";
+				LIBRARY_SEARCH_PATHS = "$(GAMBITC_BASEPATH)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM)/lib";
 				OTHER_CFLAGS = "-D___LIBRARY";
 				OTHER_LDFLAGS = "-lgambc";
 				PRODUCT_NAME = iphonegl_tmpl;
@@ -289,7 +289,7 @@
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GSC = "/Users/weiju/devlocal/$(CONFIGURATION)$(EFFECTIVE_PLATFORM)/bin/gsc";
+				GSC = "$(GAMBITC_BASEPATH)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM)/bin/gsc";
 				PRODUCT_NAME = "compile scheme files";
 			};
 			name = Debug;

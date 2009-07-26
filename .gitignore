@@ -1,2 +1,3 @@
 build
+*/scheme/*.c
 .DS_Store
