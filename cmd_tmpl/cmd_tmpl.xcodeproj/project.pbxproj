@@ -128,17 +128,17 @@
 /* End PBXGroup section */
 
 /* Begin PBXLegacyTarget section */
-		735FBB80101AA16A00D0718A /* ruby build */ = {
+		735FBB80101AA16A00D0718A /* compile scheme files */ = {
 			isa = PBXLegacyTarget;
 			buildArgumentsString = "$(ACTION)";
-			buildConfigurationList = 735FBB92101AA18700D0718A /* Build configuration list for PBXLegacyTarget "ruby build" */;
+			buildConfigurationList = 735FBB92101AA18700D0718A /* Build configuration list for PBXLegacyTarget "compile scheme files" */;
 			buildPhases = (
 			);
 			buildToolPath = tools/build.rb;
 			buildWorkingDirectory = "$(PROJECT_DIR)";
 			dependencies = (
 			);
-			name = "ruby build";
+			name = "compile scheme files";
 			passBuildSettingsInEnvironment = 1;
 			productName = "ruby build";
 		};
@@ -178,7 +178,7 @@
 			projectRoot = "";
 			targets = (
 				8DD76FA90486AB0100D96B5E /* cmd_tmpl */,
-				735FBB80101AA16A00D0718A /* ruby build */,
+				735FBB80101AA16A00D0718A /* compile scheme files */,
 			);
 		};
 /* End PBXProject section */
@@ -198,7 +198,7 @@
 /* Begin PBXTargetDependency section */
 		735FBB94101AA1BC00D0718A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 735FBB80101AA16A00D0718A /* ruby build */;
+			target = 735FBB80101AA16A00D0718A /* compile scheme files */;
 			targetProxy = 735FBB93101AA1BC00D0718A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -271,8 +271,8 @@
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GSC = "/Users/weiju/devlocal/gambitc-macosx/bin/gsc";
-				PRODUCT_NAME = "ruby build";
+				GSC = "/Users/weiju/devlocal/$(CONFIGURATION)$(EFFECTIVE_PLATFORM)/bin/gsc";
+				PRODUCT_NAME = "compile scheme files";
 			};
 			name = Debug;
 		};
@@ -308,7 +308,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		735FBB92101AA18700D0718A /* Build configuration list for PBXLegacyTarget "ruby build" */ = {
+		735FBB92101AA18700D0718A /* Build configuration list for PBXLegacyTarget "compile scheme files" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				735FBB81101AA16A00D0718A /* Debug */,
